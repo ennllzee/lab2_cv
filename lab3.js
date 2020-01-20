@@ -9,7 +9,7 @@
         var x = document.getElementById("guessField").value; 
  
         if(guess<=10){
-            if(x > 100 || x < 1){
+            if(!(x > 0 && x < 101)){
                 document.querySelector('.result').textContent = "Please Enter Number Between 0 and 100"; 
             }else{
                 document.querySelector('.turn').textContent = 10 - guess + " left";

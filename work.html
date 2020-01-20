@@ -27,7 +27,7 @@
 <![endif]-->
  <!-- Google Font -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <link  rel="stylesheet" href="lab3.css">
+ <link rel="stylesheet" href="lab3style.css">
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Fruktur">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
 </head>
@@ -135,23 +135,30 @@
             <section class="content">
                 <div class="box">
                     <div class="box-header with-border">
-                      <h3 class="box-title"><a href="https://ennllzee.github.io/lab3_guessing_number/" target="_blank"> Lab 3 : Number Guessing Game</a></h3>                  
+                      <h3 class="box-title"><a href="https://ennllzee.github.io/lab3_guessing_number/" target="_blank" class="link"> Lab 3 : Number Guessing Game</a></h3>                  
                     
                     <!-- /.box-body -->
                     
                   </div>
-                    <div class="game"><h1>Guess Me</h1></div>
-    <table ><tr><td><div class="title"><h2>&nbsp;Manual&nbsp; </h2></div></td><td><div class="manual"> &nbsp; Guessing a Random Number between 1 and 100 in 10 turns or less. We will tell you if your number was too low or too high. &nbsp;</div></td></tr></table>
-    <div class="form"> 
-        <input type = "text" id = "guessField" class = "guessField" placeholder="Enter a Number (1-100)"> 
-        <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
-    </div>
-    <br>
-    <table align="center"><tr><td><div class="result"></div></td></tr></table>
-    <table><tr><td><div class="title"><h2>&nbsp;History&nbsp;&nbsp;&nbsp;</h2></div></td><td class="history"></td><td><div class="turn"></div></td></tr></table>
-    <br>
-    <a href="work.html"><button>Restart Game</button></a></div>
-                <br>
+                  <div class="game">
+                    <h1 class="guessMe">Guess Me</h1>
+                      <table ><tr><td><h2 class="minor">&nbsp;Manual&nbsp; </h2></td><td><div class="manual"> &nbsp; Guessing a Random Number between 1 and 100 in 10 turns or less. We will tell you if your number was too low or too high. &nbsp;</div></td></tr></table>
+                      <div class="box-body" align="center">
+                        <input type = "text" id = "guessField" class = "guessField" placeholder="Enter a Number (1-100)"> 
+                        <br>
+                        <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess">
+                        <br>
+                        <br>
+                      <table><tr><td align="center"><div class="result"></div></td></tr></table>
+                      <br>
+                    </div>
+                      <table><tr><td><h2 class="minor">&nbsp;History&nbsp;&nbsp;&nbsp;</h2></td><td class="history"></td><td><div class="turn"></div></td></tr></table>
+                      <br>
+                      <a href="work.html"><button>Restart Game</button></a>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
             </section>
             
         </div>
@@ -373,10 +380,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/demo.js"></script>
-<script>
-  $(document).ready(function () {
-    $('.sidebar-menu').tree()
-  })
-</script>
+      <script>
+        $(document).ready(function () {
+          $('.sidebar-menu').tree()
+        })
+      </script>
                 <script src="lab3.js"></script>
 </body>
