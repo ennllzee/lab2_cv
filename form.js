@@ -83,7 +83,7 @@ db.collection('Contact').orderBy("Firstname").onSnapshot(doc =>{
                   title: '',
                   titleTextStyle: {},
                   colors:['#EC02FF','#3055FF','#7EE182'] ,
-                  pieHole: 0.5,
+                  pieHole: 0.2,
                 };
         
                 var chart = new google.visualization.PieChart(document.getElementById('Piechart'))
